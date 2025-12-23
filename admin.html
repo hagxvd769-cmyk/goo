@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyFlix - Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="admin-panel">
+    <h2>Upload Video</h2>
+    <input type="text" id="title" placeholder="Title">
+    <select id="type">
+      <option value="movie">Movie</option>
+      <option value="anime">Anime</option>
+    </select>
+    <input type="file" id="thumbnail" accept="image/*">
+    <input type="text" id="videoLink" placeholder="Video Link (optional)">
+    <input type="file" id="videoFile" accept="video/*" placeholder="Upload Video File (optional)">
+    <button onclick="uploadVideo()">Upload</button>
+
+    <h2>Manage Banners</h2>
+    <textarea id="banners" placeholder='[{"imageUrl": "url", "link": "link"}]'></textarea>
+    <button onclick="updateBanners()">Update Banners</button>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>
